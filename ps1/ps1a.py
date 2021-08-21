@@ -7,7 +7,7 @@ mont_rate = .04 / 12
 saved = 0.0
 saved = salary_saved_evry_month + saved*mont_rate
 month = 1
-while saved <= portion_down_payment :
+while saved < portion_down_payment :
     saved += salary_saved_evry_month  + saved*mont_rate
     month+=1
 print("Number of months :",month)
